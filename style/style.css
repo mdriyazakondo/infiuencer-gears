@@ -208,10 +208,12 @@
   .banner-container {
     width: 100%;
     margin-bottom: 30px;
+    order: 2;
   }
   .banner-image {
     width: 50%;
     background-image: none;
+    order: 1;
   }
   .banner-image img {
     width: 100%;
@@ -240,6 +242,10 @@
   .footer-container {
     flex-direction: column;
     width: 100%;
+    order: 1;
+  }
+  .featured-image {
+    order: 2;
   }
   .featured-image img {
     width: 100%;
@@ -260,11 +266,13 @@
   .banner-container {
     width: 100%;
     padding: 20px;
+    order: 2;
   }
   .banner-image {
     width: 540px;
     height: 100%;
     margin-top: 30px;
+    order: 1;
   }
   .brand-section {
     grid-template-columns: repeat(4, 1fr);
@@ -285,6 +293,12 @@
   .featured-section {
     flex-direction: column;
     padding: 20px;
+  }
+  .featured-image {
+    order: 2;
+  }
+  .featured-container {
+    order: 1;
   }
 }
 @media screen and (min-width: 1020px) and (max-width: 1440px) {
