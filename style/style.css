@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* * shared section */
+.dark-2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(58, 58, 58);
+}
+
+.dark-3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(108, 108, 108);
+}
+.sheared-btn {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: rgb(224, 44, 109);
+  border: 2px solid rgb(224, 44, 109);
+  color: rgb(255, 255, 255);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.sheared-btn:hover {
+  background-color: transparent;
+  color: rgb(224, 44, 109);
+}
+
+.card {
+  width: 329px;
+  height: 476px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 14px 17px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+}
+.card h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(24, 25, 31);
+  margin-top: 16px;
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+  margin-top: 16px;
+}
+.card p {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(120, 120, 133);
+  margin-top: 6px;
+}
+
+.max-width {
+  max-width: 1440px;
+  margin: 20px auto;
+}
+/* navbar section */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.nav li {
+  list-style: none;
+}
+.nav li a {
+  text-decoration: none;
+}
+
+.banner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.banner-container {
+  width: 572px;
+}
+.banner-title {
+  font-size: 52px;
+  font-weight: 700;
+  color: rgb(58, 58, 58);
+}
+
+.banner-container button {
+  padding: 10px 24px;
+  margin-top: 24px;
+  border-radius: 41px;
+}
+.banner-image {
+  background-image: url("../image/images/Circle\ design.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 440px;
+}
+
+/* brand-section */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.brand-section {
+  /* width: max-content; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+  gap: 150px;
+}
+
+/* card-sectino */
+.card-sectino {
+  margin-top: 80px;
+}
+.card-sectino .dark-2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cared-box {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* featured-section */
+.featured-section {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 50px;
+}
+.featured-container .dark-2 {
+  margin-bottom: 20px;
+}
+.featured-container .sheared-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+/* footer-section */
+.footer-section {
+  background-color: #000000;
+}
+
+.footer-container {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  margin: 100px 0px;
+  text-align: center;
+}
+.footer h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer p {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
