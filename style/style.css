@@ -83,7 +83,7 @@
 .nav li a {
   text-decoration: none;
 }
-
+/* banner section */
 .banner-section {
   display: flex;
   align-items: center;
@@ -120,13 +120,12 @@
   margin-top: 100px;
 }
 .brand-section {
-  /* width: max-content; */
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   justify-content: space-between;
   align-items: center;
-  /* border: 2px solid black; */
-  gap: 150px;
+
+  gap: 80px;
 }
 
 /* card-sectino */
@@ -192,4 +191,119 @@
   margin-top: 20px;
   font-size: 14px;
   font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .banner-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner-image {
+    width: 50%;
+    background-image: none;
+  }
+  .banner-image img {
+    width: 100%;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+  .brand-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+  .cared-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .featured-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .featured-image img {
+    width: 100%;
+  }
+  .footer {
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1020px) {
+  .navbar {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .banner-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .banner-image {
+    width: 540px;
+    height: 100%;
+    margin-top: 30px;
+  }
+  .brand-section {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cared-box {
+    padding: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+  .card img {
+    width: 100%;
+  }
+  .featured-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 1020px) and (max-width: 1440px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+  .brand-section {
+    gap: 40px;
+  }
+  .cared-box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .featured-section {
+    padding: 40px;
+  }
 }
