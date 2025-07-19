@@ -192,6 +192,18 @@
   font-size: 14px;
   font-weight: 700;
 }
+.social-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 24px;
+}
+.social-icone i {
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 576px) {
   .navbar {
